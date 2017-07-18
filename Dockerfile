@@ -13,6 +13,7 @@ CMD java Sample
 #ENTRYPOINT "/usr/bin/bash"
 
 #ARG MESSAGE_ARG='Building message... over arg'
-#ENV message $MESSAGE_ARG
-#RUN echo $message
+
+ENV message $MESSAGE_ARG
+RUN echo $message
 
